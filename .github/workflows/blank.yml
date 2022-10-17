@@ -26,6 +26,9 @@ jobs:
       - name: time-push
         run: |
           python3 main.py
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}          
 
  # Steps represent a sequence of tasks that will be executed as part of the job
   #  steps:
